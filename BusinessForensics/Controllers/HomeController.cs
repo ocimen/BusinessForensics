@@ -47,7 +47,8 @@ namespace BusinessForensics.Controllers
             var attemptModel = new Attempt
             {
                 GameId = game.Id,
-                GameAttempt = game.GameAttempts
+                GameAttempt = game.GameAttempts,
+                AttemptCountLeft = 3
             };
             return RedirectToAction("Created", attemptModel);
         }
@@ -55,6 +56,7 @@ namespace BusinessForensics.Controllers
         [HttpPost]
         public async Task<IActionResult> Send(Attempt attempt)
         {
+            attempt.AttemptCountLeft = attempt.AttemptCountLeft - 1;
             var result = await _gameService.AddAttempt(attempt.GameId, attempt.AttemptNumber);
             attempt.Message = result ? "You correctly guessed the number" : "Sorry it's not the correct number";
             return RedirectToAction("Created", attempt);

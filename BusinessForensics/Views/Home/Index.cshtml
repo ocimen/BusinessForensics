@@ -21,6 +21,7 @@
         <form asp-action="Send">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="GameId" />
+            <input type="hidden" asp-for="AttemptCountLeft" />
             <div class="form-group">
                 <label asp-for="AttemptNumber" class="control-label"></label>
                 <input asp-for="AttemptNumber" class="form-control" />
@@ -48,6 +49,7 @@
         </div>
     }
     <h3>@Model.Message</h3>
+    <h3>You have @Model.AttemptCountLeft attempt right.</h3>
 }
 else
 {

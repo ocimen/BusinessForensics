@@ -14,5 +14,7 @@ namespace BusinessForensics.Models
         public List<GameAttemptDto> GameAttempt { get; set; }
 
         public string Message { get; set; }
+
+        public int AttemptCountLeft { get; set; }
     }
 }
