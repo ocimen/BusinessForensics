@@ -1,0 +1,55 @@
+﻿@model BusinessForensics.Models.Attempt
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<h4>Number</h4>
+<hr />
+<div class="form-group">
+    <form asp-action="Create">
+        <div class="form-group">
+            <input type="submit" value="Create New Game" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Send">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="GameId" />
+            <div class="form-group">
+                <label asp-for="AttemptNumber" class="control-label"></label>
+                <input asp-for="AttemptNumber" class="form-control" />
+                <span asp-validation-for="AttemptNumber" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<h4>Attempts / You have only 3 attempts</h4>
+@if (Model != null && Model.GameAttempt != null)
+{
+    @foreach (var item in Model.GameAttempt)
+    {
+        <div class="row">
+            <td>
+                @Html.DisplayFor(modelItem => item.AttemptedNumber)
+            </td>
+            <td>
+            </td>
+        </div>
+    }
+    <h3>@Model.Message</h3>
+}
+else
+{
+    <h3>You should first create a game</h3>
+}

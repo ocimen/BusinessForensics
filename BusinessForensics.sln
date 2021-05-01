@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessForensics", "BusinessForensics\BusinessForensics.csproj", "{56BD5A22-E486-4AEC-8855-8162C5F58300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessForensics.Data", "BusinessForensics.Data\BusinessForensics.Data.csproj", "{4F361A3F-6716-48FF-B5FE-DBCAF26791DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessForensics.Domain", "BusinessForensics.Domain\BusinessForensics.Domain.csproj", "{4DABA6DE-B42C-49B7-BAC8-997FED85DE12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessForensics.Services", "BusinessForensics.Services\BusinessForensics.Services.csproj", "{D530ABE3-587A-4DCB-B28B-7995172EFB4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessForensics.Models", "BusinessForensics.Models\BusinessForensics.Models.csproj", "{F1603A6C-EF64-4B27-B20B-5BE22EBD1F6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessForensics.Services.UnitTests", "BusinessForensics.Services.UnitTests\BusinessForensics.Services.UnitTests.csproj", "{B8D4A8CC-DDAB-4DC5-A638-E65E5EEF8530}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56BD5A22-E486-4AEC-8855-8162C5F58300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56BD5A22-E486-4AEC-8855-8162C5F58300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56BD5A22-E486-4AEC-8855-8162C5F58300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56BD5A22-E486-4AEC-8855-8162C5F58300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F361A3F-6716-48FF-B5FE-DBCAF26791DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F361A3F-6716-48FF-B5FE-DBCAF26791DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F361A3F-6716-48FF-B5FE-DBCAF26791DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F361A3F-6716-48FF-B5FE-DBCAF26791DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DABA6DE-B42C-49B7-BAC8-997FED85DE12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DABA6DE-B42C-49B7-BAC8-997FED85DE12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DABA6DE-B42C-49B7-BAC8-997FED85DE12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DABA6DE-B42C-49B7-BAC8-997FED85DE12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D530ABE3-587A-4DCB-B28B-7995172EFB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D530ABE3-587A-4DCB-B28B-7995172EFB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D530ABE3-587A-4DCB-B28B-7995172EFB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D530ABE3-587A-4DCB-B28B-7995172EFB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1603A6C-EF64-4B27-B20B-5BE22EBD1F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1603A6C-EF64-4B27-B20B-5BE22EBD1F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1603A6C-EF64-4B27-B20B-5BE22EBD1F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1603A6C-EF64-4B27-B20B-5BE22EBD1F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8D4A8CC-DDAB-4DC5-A638-E65E5EEF8530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8D4A8CC-DDAB-4DC5-A638-E65E5EEF8530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8D4A8CC-DDAB-4DC5-A638-E65E5EEF8530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8D4A8CC-DDAB-4DC5-A638-E65E5EEF8530}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4CEE0088-0329-41E2-AB6E-F43EC4C32BC5}
+	EndGlobalSection
+EndGlobal
